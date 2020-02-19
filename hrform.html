@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HR Form</title>
+</head>
+<body>
+    <div><h1>Вакансия: Junior Frontend Developer</h1></div>
+    <div>
+        <div style="display: inline-block">
+            <img src="./img/test_cat.jpeg" style="max-width: 300px; max-height: 300px;">
+        </div>
+        <div style="display: inline-block">
+            <span>Имя: Надежда Химунина</span><br>
+            <span><a href="https://github.com/nkhimunina/JuniorFE2020" target="_blank">Ссылка на репозиторий в GitHub</a></span><br>
+            <span>Опыт работы: нет</span><br>
+        </div>
+    </div>
+    <br>
+    <div>
+        <label>Дата собеседования:</label>
+        <input type="date">
+    </div>
+    <br>
+    <div>
+        <label>Уровень английского:</label>
+        <input type="radio" name="english-level" id="bad" value="bad">
+        <label for="bad">Плохо</label>
+        <input type="radio" name="english-level" id="average" value="average">
+        <label for="average">Средне</label>
+        <input type="radio" name="english-level" id="good" value="good">
+        <label for="good">Хорошо</label>
+        <input type="radio" name="english-level" id="excellent" value="excellent">
+        <label for="excellent">Превосходно</label>
+    </div>
+    <br>
+    <div>
+        <span>Ключевые навыки:</span>
+        <ul>
+            <li>HTML</li>
+            <li>CSS/LESS</li>
+            <li>JavaScript</li>
+        </ul>
+    </div>
+    <br>
+    <div>
+        <input type="text" placeholder="Введите навык...">
+        <button type="button" value="add-skill">Добавить в список</button>
+    </div>
+    <br>
+    <div>
+        <label for="communication">Коммуникабельность:</label>
+        <select id="communication" size="1">
+            <option selected>Выберите значение</option>
+            <option>Плохо</option>
+            <option>Средне</option>
+            <option>Хорошо</option>
+            <option>Превосходно</option>
+        </select>
+    </div>
+    <br>
+    <div>
+        <span>Желаемая з/п</span>
+        <input type="number">
+    </div>
+    <br>
+    <div>
+        <label>Подходит по критериям:</label><br>
+        <input type="checkbox" id="parameter1" name="parameter1" value="english">
+        <label for="parameter1">Знание английского</label>
+        <input type="checkbox" id="parameter2" name="parameter2" value="salary">
+        <label for="parameter2">Оклад</label>
+        <input type="checkbox" id="parameter3" name="parameter3" value="skills">
+        <label for="parameter3">Навыки</label>
+        <input type="checkbox" id="parameter4" name="parameter4" value="person">
+        <label for="parameter4">Сразу видно, что свой человек</label>
+    </div>
+    <br>
+    <div>
+        <label>Образование, курсы и т.п.</label>
+        <table>
+            <thead>
+                <tr>
+                    <td>#</td>
+                    <td>Сроки обучения</td>
+                    <td>Наименование учебного заведения, курсов...</td>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>1</td>
+                    <td>Раз</td>
+                    <td>разразраз</td>
+                </tr>
+                <tr>
+                    <td>2</td>
+                    <td>Два</td>
+                    <td>двадвадва</td>
+                </tr>
+                <tr>
+                    <td>...</td>
+                    <td></td>
+                    <td></td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</body>
+</html>
