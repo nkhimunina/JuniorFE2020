@@ -1,6 +1,7 @@
 * {
     margin: 0;
     box-sizing: border-box;
+    outline: none;
 }
 
 .main-header {
@@ -120,4 +121,117 @@ li:hover {
 
 input[type=text]:focus {
     background-color: rgba(255, 192, 203, 0.15);
+}
+
+button[type=button] {
+    border-radius: 5px;
+    padding: 5px;
+    font-family: monospace;
+    color: white;
+    background-color: lightseagreen;
+}
+
+button[type=button]:hover {
+    background-color: seagreen;
+}
+
+button[type=button]:active {
+    background-color: pink;
+}
+
+.label-communication {
+    font-family: monospace;
+    font-weight: bold;
+    font-style: italic;
+    color: deeppink;
+    font-size: 4ch;
+}
+
+select:hover {
+    border-bottom-color: deeppink;
+}
+
+input[type=number] {
+    color: seagreen;
+    font-weight: bold;
+}
+
+input[type=number]:focus {
+    border: seagreen;
+    border-width: 2px;
+    border-style: dotted;
+}
+
+.label-salary {
+    background-color: rgba(46, 139, 86, 0.15);
+}
+
+.div-parameter {
+    /* border: deeppink;
+    border-style: dotted;
+    border-width: 5px;
+    padding: 3px; */
+}
+
+.label-parameter {
+    font-weight: bold;
+    font-size: 2pc;
+    color: deeppink;
+    text-decoration-line: overline;
+    text-decoration-color: lightseagreen;
+}
+
+.label-edu {
+    border-left: lightseagreen;
+    border-style: solid;
+    border-width: 15px;
+    border-top: hidden;
+    border-right: hidden;
+    border-bottom: hidden;
+    font-size: 7mm;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+table {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    border-width: 1px;
+    border-style: solid;
+    padding: 3px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+
+th {
+    background-color: lightseagreen;
+}
+
+tr:nth-child(odd) {
+    background-color: pink;
+}
+
+.div-submit {
+    margin-top: 10px;
+    margin-left: 50px;
+    margin-bottom: 50px;
+}
+
+input[type=submit] {
+    width: 200px;
+    height: 50px;
+    font-family: sans-serif;
+    font-weight: bold;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    background: deeppink;
+    color: white;
+    border-radius: 50px;
+    border: hidden;
+    box-shadow: 5px 5px 10px lightseagreen;
+}
+
+input[type=submit]:focus, input[type=submit]:hover {
+    transform: translate(0, 5px);
+    transition: all .1s ease-in-out 0s;
+    background-color: pink;
+    color: deeppink;
 }
