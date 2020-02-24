@@ -2,3 +2,122 @@
     margin: 0;
     box-sizing: border-box;
 }
+
+.main-header {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    color: deeppink;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.photo {
+    max-width: 300px; 
+    max-height: 300px;
+    border-radius: 10px;
+}
+
+.main-info {
+    display: inline-block;
+    margin-left: 10px;
+    margin: 10px;
+    vertical-align: top;
+    border: deeppink;
+    border-style: dashed;
+    border-width: 3px;
+    border-radius: 10px;
+    padding: 10px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.label-main-info {
+    color: deeppink;
+    font-weight: bold;
+}
+
+.link-main-info {
+    color: deeppink;
+}
+
+.link-main-info:visited {
+    color: lightseagreen;
+}
+
+input[type=date] {
+    border-radius: 10px;
+    border-color: deeppink;
+    border-width: 1px;
+    padding: 3px;
+}
+
+input[type=date]:hover {
+    background-color: rgba(32, 178, 171, 0.33);
+}
+
+.label-date {
+    text-decoration-line: underline;
+    text-decoration-color: deeppink;
+}
+
+.div-date {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    border-radius: 10px;
+    border-width: 2px;
+    border-style: dotted;
+    border-color: pink;
+    padding: 5px;
+    display: inline-block;
+}
+
+.div-english-level {
+    border-radius: 10px;
+    border-width: 5px;
+    border-style: double;
+    border-color: rgba(32, 178, 171, 0.33);
+    padding: 10px;
+    display: inline-block;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+input[type=radio] {
+
+}
+
+.label-radio:hover {
+    background-color: pink;
+}
+
+li {
+    font-family: monospace;
+    font-size: 1.2em;
+    color: deeppink;
+    list-style-type: circle;
+}
+
+li:hover {
+    font-size: 1.3em;
+    color: seagreen;
+}
+
+.div-list {
+    border-style: solid;
+    border-left-color: pink;
+    border-right-color: pink;
+    border-top: hidden;
+    border-bottom: hidden;
+    border-width: 10px;
+    padding-left: 15px;
+    padding-right: 50px;
+    display: inline-block;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.label-skills {
+    color: lightseagreen;
+    font-weight: 900;
+    font-size: 2rem;
+}
+
+input[type=text]:focus {
+    background-color: rgba(255, 192, 203, 0.15);
+}

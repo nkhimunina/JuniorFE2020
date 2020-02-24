@@ -8,41 +8,39 @@
 </head>
 <body>
     <form action="">
-        <div><h1>Вакансия: Junior Frontend Developer</h1></div>
+        <div><h1 class="main-header">Вакансия: Junior Frontend Developer</h1></div>
         <div>
-            <div style="display: inline-block">
-                <img src="./img/IMG_20200219_135534_2.jpg" style="max-width: 300px; max-height: 300px;">
-            </div>
-            <div style="display: inline-block; margin-left: 10px;">
-                <span><label>Имя: </label>Надежда Химунина</span><br>
-                <span><a href="https://github.com/nkhimunina/JuniorFE2020" target="_blank">Ссылка на репозиторий в GitHub</a></span><br>
-                <span><label>Опыт работы: </label>нет</span><br>
+            <img src="./img/IMG_20200219_135534_2.jpg" class="photo">
+            <div class="main-info">
+                <span><label class="label-main-info">Имя: </label>Надежда Химунина</span><br>
+                <span><a href="https://github.com/nkhimunina/JuniorFE2020" target="_blank" class="link-main-info">Ссылка на репозиторий в GitHub</a></span><br>
+                <span><label class="label-main-info">Опыт работы: </label>нет</span><br>
             </div>
         </div>
         <br>
         <br>
-        <div>
-            <label>Дата собеседования:</label>
+        <div class="div-date">
+            <label class="label-date">Дата собеседования:</label>
             <input type="date">
         </div>
         <br>
         <br>
-        <div>
+        <div class="div-english-level">
             <label>Уровень английского:</label>
             <input type="radio" name="english-level" id="english-bad" value="english-bad">
-            <label for="english-bad">Плохо</label>
+            <label for="english-bad" class="label-radio">Плохо</label>
             <input type="radio" name="english-level" id="english-average" value="english-average">
-            <label for="english-average">Средне</label>
+            <label for="english-average" class="label-radio">Средне</label>
             <input type="radio" name="english-level" id="english-good" value="english-good">
-            <label for="english-good">Хорошо</label>
+            <label for="english-good" class="label-radio">Хорошо</label>
             <input type="radio" name="english-level" id="english-excellent" value="english-excellent">
-            <label for="english-excellent">Превосходно</label>
+            <label for="english-excellent" class="label-radio">Превосходно</label>
         </div>
         <br>
         <br>
         <div>
-            <div>
-            <label>Ключевые навыки:</label>
+            <div class="div-list">
+            <label class="label-skills">Ключевые навыки:</label>
                 <ul>
                     <li>HTML</li>
                     <li>CSS/LESS</li>
