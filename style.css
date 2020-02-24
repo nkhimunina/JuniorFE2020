@@ -4,6 +4,11 @@
     outline: none;
 }
 
+
+
+/* Основная информация */
+
+/* Заголовок */
 .main-header {
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     color: deeppink;
@@ -11,12 +16,14 @@
     margin-bottom: 10px;
 }
 
+/* Фото */
 .photo {
     max-width: 300px; 
     max-height: 300px;
     border-radius: 10px;
 }
 
+/* Текст */
 .main-info {
     display: inline-block;
     margin-left: 10px;
@@ -42,6 +49,10 @@
 .link-main-info:visited {
     color: lightseagreen;
 }
+
+
+
+/* Дата собеседования */
 
 input[type=date] {
     border-radius: 10px;
@@ -69,6 +80,10 @@ input[type=date]:hover {
     display: inline-block;
 }
 
+
+
+/* Уровень английского*/
+
 .div-english-level {
     border-radius: 10px;
     border-width: 5px;
@@ -79,13 +94,13 @@ input[type=date]:hover {
     font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
-input[type=radio] {
-
-}
-
 .label-radio:hover {
     background-color: pink;
 }
+
+
+
+/* Список навыков */
 
 li {
     font-family: monospace;
@@ -119,6 +134,10 @@ li:hover {
     font-size: 2rem;
 }
 
+
+
+/* Стили для текстовых инпутов */
+
 input[type=text]:focus {
     background-color: rgba(255, 192, 203, 0.15);
 }
@@ -139,6 +158,10 @@ button[type=button]:active {
     background-color: pink;
 }
 
+
+
+/* Коммуникабельность */
+
 .label-communication {
     font-family: monospace;
     font-weight: bold;
@@ -147,9 +170,17 @@ button[type=button]:active {
     font-size: 4ch;
 }
 
+
+
+/* Просто ховер для селектов */
+
 select:hover {
     border-bottom-color: deeppink;
 }
+
+
+
+/* Желаемая з/п */
 
 input[type=number] {
     color: seagreen;
@@ -166,6 +197,10 @@ input[type=number]:focus {
     background-color: rgba(46, 139, 86, 0.15);
 }
 
+
+
+/* Чекбокс "Подходит по критериям" */
+
 .div-parameter {
     /* border: deeppink;
     border-style: dotted;
@@ -180,6 +215,25 @@ input[type=number]:focus {
     text-decoration-line: overline;
     text-decoration-color: lightseagreen;
 }
+
+input[type=submit]:focus, input[type=submit]:hover {
+    transform: translate(0, 5px);
+    transition: all .30s;
+    background-color: pink;
+    color: deeppink;
+}
+
+input[type=checkbox] {
+    display: none;
+}
+
+.label-checkbox {
+    padding-left: 30px;
+}
+
+
+
+/* Таблица "Образование" */
 
 .label-edu {
     border-left: lightseagreen;
@@ -209,6 +263,10 @@ tr:nth-child(odd) {
     background-color: pink;
 }
 
+
+
+/* Кнопка "Отправить" */
+
 .div-submit {
     margin-top: 10px;
     margin-left: 50px;
@@ -227,11 +285,4 @@ input[type=submit] {
     border-radius: 50px;
     border: hidden;
     box-shadow: 5px 5px 10px lightseagreen;
-}
-
-input[type=submit]:focus, input[type=submit]:hover {
-    transform: translate(0, 5px);
-    transition: all .30s;
-    background-color: pink;
-    color: deeppink;
 }
