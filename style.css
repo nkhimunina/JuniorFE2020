@@ -216,19 +216,36 @@ input[type=number]:focus {
     text-decoration-color: lightseagreen;
 }
 
-input[type=submit]:focus, input[type=submit]:hover {
-    transform: translate(0, 5px);
-    transition: all .30s;
-    background-color: pink;
-    color: deeppink;
-}
-
-input[type=checkbox] {
+.label-checkbox > input {
     display: none;
 }
 
-.label-checkbox {
-    padding-left: 30px;
+.label-checkbox > input:checked + span::before {
+    color: lightseagreen;
+}
+
+.label-checkbox > span {
+    padding-left: 10px;
+}
+
+.label-checkbox > span::before {
+    content: "";
+    display: inline-block;
+    width: 16px;
+    height: 16px;
+    line-height: 18px;
+    border: 1px dotted deeppink;
+    border-radius: 3px;
+    margin-right: 5px;
+    background-color: white;
+    transition: all .5s;
+    color: deeppink;
+}
+
+.label-checkbox > input:checked + span::before {
+    /* background-color: lightseagreen; */
+    content: "\2764";
+    color: pink;
 }
 
 
@@ -285,4 +302,11 @@ input[type=submit] {
     border-radius: 50px;
     border: hidden;
     box-shadow: 5px 5px 10px lightseagreen;
+}
+
+input[type=submit]:focus, input[type=submit]:hover {
+    transform: translate(0, 5px);
+    transition: all .30s;
+    background-color: pink;
+    color: deeppink;
 }
