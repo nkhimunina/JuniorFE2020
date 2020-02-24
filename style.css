@@ -231,7 +231,7 @@ input[type=submit] {
 
 input[type=submit]:focus, input[type=submit]:hover {
     transform: translate(0, 5px);
-    transition: all .1s ease-in-out 0s;
+    transition: all .30s;
     background-color: pink;
     color: deeppink;
 }
