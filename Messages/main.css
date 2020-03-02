@@ -4,13 +4,13 @@
     font-family: monospace;
 }
 
+
+
 .main-block {
     width: 800px;
     height: 600px;
     background-color: grey;
 }
-
-
 
 .main-header {
     height: 70px;
@@ -63,7 +63,6 @@
 
 
 .main-container {
-    display: flex;
     flex-flow: column;
     overflow: auto;
     height: 530px;
@@ -72,7 +71,7 @@
 
 .message-block {
     display: flex;
-    padding: 4px;
+    justify-content: space-around;
 }
 
 .user-info-block {
@@ -84,6 +83,7 @@
     padding: 4px;
     flex-basis: 150px;
     flex-shrink: 0;
+    align-items: center;
 }
 
 .user-photo {
@@ -97,34 +97,29 @@
     flex-shrink: 0;
     justify-content: center;
     font-weight: bold;
-}
-
-.user-info {
-    display: flex;
-    flex-direction: column;
-    padding-left: 4px;
-}
-
-.user-name {
-    display: flex;
-    font-weight: bold;
-    margin-bottom: 4px;
-    margin-left: 10px;
+    align-items: center;
 }
 
 .user-date-time {
     display: flex;
+    padding-left: 4px;
     flex-wrap: wrap;
+}
+
+.user-name {
+    font-weight: bold;
+    margin-bottom: 4px;
+    margin-left: 10px;
 }
 
 .message-text-block {
     display: flex;
     flex-flow: column;
     padding: 4px;
+    flex-basis: 610px;
 }
 
 .message-text {
-    display: flex;
     background-color: darkgray;
     border-radius: 10px;
     padding: 4px;
