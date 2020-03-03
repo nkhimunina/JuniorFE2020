@@ -19,6 +19,39 @@ body {
   margin-right: auto;
 }
 
+section .container {
+  padding: 114px 0;
+  text-align: center;
+}
+
+section h2 {
+  font-family: "Roboto Slab";
+  font-weight: bold;
+  text-transform: uppercase;
+  font-size: 36px;
+  margin: 0;
+  text-align: center;
+  height: 27px;
+  line-height: 27px;
+}
+
+section .section-description {
+  max-width: 880px;
+  margin: 30px auto 60px auto;
+  font-family: "Open Sans";
+  font-size: 16px;
+  line-height: 1.75;
+  text-align: center;
+}
+
+section {
+  color: white;
+}
+
+section:nth-child(even) {
+  color: #222222;
+}
+
 header {
   height: 48px;
   -webkit-box-shadow: 0px 1px 3px 0 rgba(155, 155, 155, 0.2);
@@ -123,33 +156,6 @@ header .social-icon:hover {
   height: 600px;
 }
 
-.latest-work .container {
-  padding: 114px 0;
-  text-align: center;
-}
-
-.latest-work h2 {
-  font-family: "Roboto Slab";
-  color: #222222;
-  font-weight: bold;
-  text-transform: uppercase;
-  font-size: 36px;
-  margin: 0;
-  text-align: center;
-  height: 27px;
-  line-height: 27px;
-}
-
-.latest-work .section-description {
-  max-width: 880px;
-  margin: 30px auto 60px auto;
-  font-family: "Roboto Slab";
-  font-size: 16px;
-  line-height: 1.75;
-  text-align: center;
-  color: #393939;
-}
-
 .latest-work .tab-control {
   text-align: center;
   margin-bottom: 55px;
@@ -167,6 +173,11 @@ header .social-icon:hover {
   color: #6a6b6a;
   text-transform: uppercase;
   font-family: "Roboto Slab";
+}
+
+.latest-work .tab-button.active {
+  background-color: #43a906;
+  color: white;
 }
 
 .latest-work .tab-button + .tab-button {
@@ -232,5 +243,201 @@ header .social-icon:hover {
   font-family: "Roboto Slab";
   font-size: 16px;
   text-transform: uppercase;
+}
+
+.our-achievement {
+  background-color: #bdbebd;
+  background-size: cover;
+  background-position: center;
+}
+
+.our-achievement .overlay {
+  background-color: rgba(3, 3, 3, 0.7);
+}
+
+.our-achievement .our-achievement-block {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  justify-items: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.our-achievement .achievement-description {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.our-achievement .achievement-description > i {
+  font-size: 80px;
+  color: #43a906;
+}
+
+.our-achievement .achievement-description .achievement-numbers {
+  font-size: 37px;
+  padding: 31px 0 22px 0;
+  position: relative;
+  line-height: 31px;
+}
+
+.our-achievement .achievement-description .achievement-numbers::before {
+  content: '';
+  position: absolute;
+  width: 80px;
+  height: 1px;
+  background-color: white;
+  bottom: 0px;
+  left: 50%;
+  margin-left: -40px;
+}
+
+.our-achievement .achievement-description .achievement-title {
+  font-size: 18px;
+  padding: 21px 0;
+  line-height: 21px;
+  text-transform: uppercase;
+}
+
+.latest-event .latest-event-block {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 760px 388px;
+      grid-template-columns: 760px 388px;
+  gap: 22px;
+}
+
+.latest-event .event-grid-block {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (380px)[2];
+      grid-template-columns: repeat(2, 380px);
+  -ms-grid-rows: (294px)[2];
+      grid-template-rows: repeat(2, 294px);
+  background-color: #eff0f2;
+}
+
+.latest-event .event-grid-block:nth-child(1) {
+  background-color: #bdbebd;
+}
+
+.latest-event .event-grid-block > img {
+  -o-object-fit: cover;
+     object-fit: cover;
+  width: 100%;
+  height: 100%;
+}
+
+.latest-event .event-grid-item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 31px 0;
+}
+
+.latest-event .event-title {
+  font-family: "Roboto Slab";
+  font-size: 18px;
+  line-height: 18px;
+  font-weight: bold;
+  color: #454444;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  max-width: 22ch;
+}
+
+.latest-event .event-date {
+  font-family: "Roboto Slab";
+  font-size: 14px;
+  line-height: 14px;
+  color: #6c6b6b;
+  margin-top: 16px;
+}
+
+.latest-event .event-description {
+  font-family: "Open Sans";
+  font-size: 14px;
+  line-height: 1.71;
+  color: #646464;
+  padding: 23px;
+}
+
+.latest-event .event-button {
+  width: 129px;
+  height: 40px;
+  padding: 15px 0;
+  border-radius: 2px;
+  font-family: "Open Sans";
+  font-size: 12px;
+  line-height: 12px;
+  font-weight: bold;
+  text-align: center;
+  text-transform: uppercase;
+  background-color: #101010;
+  color: #ffffff;
+  border: solid 1px #383938;
+}
+
+.latest-event .event-button:active {
+  background-color: #43a906;
+}
+
+.latest-event .event-list-block {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-rows: (90px)[5];
+      grid-template-rows: repeat(5, 90px);
+  gap: 34px;
+  text-align: left;
+  font-family: "Open Sans";
+  font-size: 14px;
+  line-height: 1.71;
+  color: #646464;
+}
+
+.latest-event .event-list-item {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 95px auto;
+      grid-template-columns: 95px auto;
+  gap: 20px;
+}
+
+.latest-event .event-list-item > img {
+  -o-object-fit: cover;
+     object-fit: cover;
+  width: 100%;
+  height: 100%;
+}
+
+.latest-event .event-list-item > div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.latest-event .event-list-item span + span {
+  padding-top: 20px;
 }
 /*# sourceMappingURL=main.css.map */
