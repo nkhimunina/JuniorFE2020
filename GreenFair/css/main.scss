@@ -320,7 +320,6 @@ header {
         font-size: 18px;
         line-height: 18px;
         font-weight: bold;
-        // text-align: center;
         color: #454444;
         white-space: nowrap;
         overflow: hidden;
@@ -332,7 +331,6 @@ header {
         font-family: $roboto-slab;
         font-size: 14px;
         line-height: 14px;
-        // text-align: center;
         color: #6c6b6b;
         margin-top: 16px;
     }
@@ -341,7 +339,6 @@ header {
         font-family: $open-sans;
         font-size: 14px;
         line-height: 1.71;
-        // text-align: center;
         color: #646464;
         padding: 23px;
     }
@@ -395,6 +392,68 @@ header {
 
         span + span {
             padding-top: 20px;
+        }
+    }
+}
+
+.testimonials {
+    background-color: black;
+
+    .testimonials-block {
+        display: grid;
+        grid-template-columns: 570px 570px;
+        gap: 30px;
+    }
+
+    .testimonials-item {
+        display: flex;
+        flex-direction: column;
+        position: relative;
+        margin-top: 55px;
+
+        & > img {
+            position: absolute;
+            height: 106px;
+            width: 106px;
+            border-radius: 53px;
+            object-fit: cover;
+            object-position: center;
+            left: 232px;
+            top: -53px;
+        }
+
+        & > i {
+            position: absolute;
+            top: 70px;
+            left: 22px;
+            font-size: 20px;
+            color: black;
+        }
+    }
+
+    .testimonials-text {
+        font-family: $open-sans;
+        font-size: 14px;
+        font-style: italic;
+        line-height: 1.86;
+        text-align: left;
+        color: #646464;
+        background-color: white;
+        padding: 68px 19px 55px 65px;
+    }
+
+    .testimonials-author {
+        display: flex;
+        flex-direction: column;
+        margin-top: 32px;
+        font-family: $roboto-slab;
+        font-size: 15px;
+        line-height: 1.6;
+        text-align: center;
+        color: #ffffff;
+
+        span + span {
+            color: #43a906;
         }
     }
 }

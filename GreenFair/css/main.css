@@ -440,4 +440,80 @@ header .social-icon:hover {
 .latest-event .event-list-item span + span {
   padding-top: 20px;
 }
+
+.testimonials {
+  background-color: black;
+}
+
+.testimonials .testimonials-block {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 570px 570px;
+      grid-template-columns: 570px 570px;
+  gap: 30px;
+}
+
+.testimonials .testimonials-item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  position: relative;
+  margin-top: 55px;
+}
+
+.testimonials .testimonials-item > img {
+  position: absolute;
+  height: 106px;
+  width: 106px;
+  border-radius: 53px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: center;
+     object-position: center;
+  left: 232px;
+  top: -53px;
+}
+
+.testimonials .testimonials-item > i {
+  position: absolute;
+  top: 70px;
+  left: 22px;
+  font-size: 20px;
+  color: black;
+}
+
+.testimonials .testimonials-text {
+  font-family: "Open Sans";
+  font-size: 14px;
+  font-style: italic;
+  line-height: 1.86;
+  text-align: left;
+  color: #646464;
+  background-color: white;
+  padding: 68px 19px 55px 65px;
+}
+
+.testimonials .testimonials-author {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin-top: 32px;
+  font-family: "Roboto Slab";
+  font-size: 15px;
+  line-height: 1.6;
+  text-align: center;
+  color: #ffffff;
+}
+
+.testimonials .testimonials-author span + span {
+  color: #43a906;
+}
 /*# sourceMappingURL=main.css.map */
