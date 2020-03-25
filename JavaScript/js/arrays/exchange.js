@@ -13,17 +13,23 @@ console.log(array);
 let newArray = array;
 let halfLen = Math.floor(array.length / 2);
 console.log(halfLen);
-if (!Math.floor(array.length % 2)) { // если четное число элементов
-    for (let i = 0; i < halfLen; i++) {
-        let tmp = newArray[i];
-        newArray[i] = newArray[halfLen + i];
-        newArray[halfLen + i] = tmp;
-    }
-} else { //если нечетное
-    for (let i = 0; i < halfLen; i++) {
-        let tmp = newArray[i];
-        newArray[i] = newArray[halfLen + 1 + i];
-        newArray[halfLen + 1 + i] = tmp;
-    }
+// if (!Math.floor(array.length % 2)) { // если четное число элементов
+//     for (let i = 0; i < halfLen; i++) {
+//         let tmp = newArray[i];
+//         newArray[i] = newArray[halfLen + i];
+//         newArray[halfLen + i] = tmp;
+//     }
+// } else { //если нечетное
+//     for (let i = 0; i < halfLen; i++) {
+//         let tmp = newArray[i];
+//         newArray[i] = newArray[halfLen + 1 + i];
+//         newArray[halfLen + 1 + i] = tmp;
+//     }
+// }
+//*плачет*
+for (let i = 0; i < halfLen; i++) {
+    let tmp = newArray[i];
+    newArray[i] = newArray[mlen - halfLen + i];
+    newArray[mlen - halfLen + i] = tmp;
 }
 console.log(newArray);
