@@ -516,4 +516,117 @@ header .social-icon:hover {
 .testimonials .testimonials-author span + span {
   color: #43a906;
 }
+
+.slider-section {
+  height: 785px;
+  position: relative;
+}
+
+.slider-section .carousel-slide {
+  position: absolute;
+  top: 0;
+  height: 100%;
+  left: 0;
+  width: 100%;
+  opacity: 0;
+  -webkit-transition: all .4s ease-in-out;
+  transition: all .4s ease-in-out;
+  z-index: 0;
+}
+
+.slider-section .carousel-slide.active {
+  opacity: 1;
+  z-index: 1;
+}
+
+.slider-section .slide-content {
+  font-family: "Lato", sans-serif;
+  text-transform: uppercase;
+  color: white;
+  font-size: 54px;
+  position: relative;
+  text-align: center;
+  top: 50%;
+  -webkit-transform: translateY(calc(-50% + 40px));
+          transform: translateY(calc(-50% + 40px));
+}
+
+.slider-section .slide-button {
+  width: 180px;
+  height: 57px;
+  border-radius: 2px;
+  background-color: #101010;
+  display: inline-block;
+  line-height: 57px;
+  color: white;
+  font-family: "Lato", sans-serif;
+  font-size: 14px;
+  font-weight: bold;
+  text-align: center;
+  text-decoration: none;
+}
+
+.slider-section .slide-back {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  position: absolute;
+}
+
+.slider-section .carousel-dots {
+  position: absolute;
+  bottom: 31px;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  z-index: 3;
+}
+
+.slider-section .carousel-dots .carousel-dot {
+  width: 13px;
+  height: 13px;
+  border: solid 3px #e6e5e5;
+  border-radius: 50%;
+  padding: 0;
+  background: transparent;
+  -webkit-transition: all .2s ease;
+  transition: all .2s ease;
+  cursor: pointer;
+  outline: none;
+}
+
+.slider-section .carousel-dots .carousel-dot.active {
+  background-color: #e6e5e5;
+}
+
+.slider-section .carousel-dots .carousel-dot + .carousel-dot {
+  margin-left: 7px;
+}
+
+.slider-section .carousel-lens {
+  overflow: hidden;
+  height: 100%;
+}
+
+.slider-section .carousel-slides {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: 100%;
+  -webkit-transition: all .8s ease-in-out;
+  transition: all .8s ease-in-out;
+}
+
+.slider-section .carousel-slides .carousel-slide {
+  position: static;
+  opacity: 1;
+  pointer-events: all;
+  width: 100%;
+  -ms-flex-negative: 0;
+      flex-shrink: 0;
+}
 /*# sourceMappingURL=main.css.map */
