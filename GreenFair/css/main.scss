@@ -410,7 +410,7 @@ header {
         display: flex;
         flex-direction: column;
         position: relative;
-        margin-top: 55px;
+        padding-top: 55px;
 
         & > img {
             position: absolute;
@@ -419,8 +419,8 @@ header {
             border-radius: 53px;
             object-fit: cover;
             object-position: center;
-            left: 232px;
-            top: -53px;
+            left: calc(50% - 53px);
+            top: 0;
         }
 
         & > i {

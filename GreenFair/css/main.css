@@ -462,7 +462,7 @@ header .social-icon:hover {
       -ms-flex-direction: column;
           flex-direction: column;
   position: relative;
-  margin-top: 55px;
+  padding-top: 55px;
 }
 
 .testimonials .testimonials-item > img {
@@ -474,8 +474,8 @@ header .social-icon:hover {
      object-fit: cover;
   -o-object-position: center;
      object-position: center;
-  left: 232px;
-  top: -53px;
+  left: calc(50% - 53px);
+  top: 0;
 }
 
 .testimonials .testimonials-item > i {
