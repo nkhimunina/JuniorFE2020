@@ -1,0 +1,33 @@
+.my-select {
+    width: 40ch;
+
+    .my-select-head {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .my-select-selected {
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        max-width: 35ch;
+    }
+
+    .my-select-input {
+        display: none;
+    }
+
+    .my-select-caret-down {
+        
+    }
+
+    .my-select-caret-up {
+        display: none;
+    }
+    
+    .my-select-option {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
+    }
+}
