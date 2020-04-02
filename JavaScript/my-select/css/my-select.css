@@ -1,5 +1,5 @@
 .my-select {
-  width: 40ch;
+  width: 42ch;
 }
 
 .my-select .my-select-head {
@@ -24,6 +24,11 @@
 
 .my-select .my-select-caret-up {
   display: none;
+}
+
+.my-select .my-select-options {
+  overflow: auto;
+  height: 20ch;
 }
 
 .my-select .my-select-option {
