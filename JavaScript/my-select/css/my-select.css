@@ -20,6 +20,7 @@
 
 .my-select .my-select-input {
   display: none;
+  width: 42ch;
 }
 
 .my-select .my-select-caret-up {

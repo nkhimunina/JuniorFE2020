@@ -26,16 +26,14 @@ let array = [
     'Отступники'
 ]
 
-// const mySelectOptionsDiv = document.querySelector('.my-select-options');
-// mySelectOptionsDiv.innerHTML = '';
-
-// for (let i = 0; i < array.length; i++) {
-//     mySelectOptionsDiv.innerHTML += `<span class="my-select-option">${array[i]}</span>`;
-// }
-
 const mySelectCaretDown = document.querySelector('.my-select-caret-down');
-const mySelectCaretUp= document.querySelector('.my-select-caret-up');
+const mySelectCaretUp = document.querySelector('.my-select-caret-up');
 const mySelectOptionsDiv = document.querySelector('.my-select-options');
+const mySelectInput = document.querySelector('.my-select-input');
+
+let mySelectSelectedOption = document.querySelector('.my-select-selected');
+mySelectSelectedOption.innerHTML = '';
+mySelectSelectedOption.innerHTML += array[0];
 
 function onClickMySelectCaretDown(event) {
     mySelectCaretDown.style.display = 'none';
@@ -53,4 +51,14 @@ function onClickMySelectCaretUp(event) {
     mySelectCaretDown.style.display = 'block';
 
     mySelectOptionsDiv.innerHTML = '';
+}
+
+function onClickMySelectHead(event) {
+    if (mySelectCaretUp.style.display === 'block') {
+        mySelectSelectedOption.style.display = 'none';
+        mySelectInput.style.display = 'block';
+    } else {
+        mySelectSelectedOption.style.display = 'block';
+        mySelectInput.style.display = 'none';
+    }
 }
