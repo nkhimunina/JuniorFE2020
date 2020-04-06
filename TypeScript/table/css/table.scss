@@ -1,0 +1,21 @@
+.message-table {
+    border: solid 1px;
+    border-top: hidden;
+    width: 800px;
+
+    .my-table-row {
+        display: flex;
+        border-top: solid 1px;
+    }
+
+    .my-table-date {
+        border-right: solid 1px;
+        padding: 10px;
+    }
+
+    .my-table-message {
+        padding: 10px;
+        display: flex;
+        flex-flow: column;
+    }
+}

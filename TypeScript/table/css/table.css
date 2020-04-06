@@ -1,0 +1,29 @@
+.message-table {
+  border: solid 1px;
+  border-top: hidden;
+  width: 800px;
+}
+
+.message-table .my-table-row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  border-top: solid 1px;
+}
+
+.message-table .my-table-date {
+  border-right: solid 1px;
+  padding: 10px;
+}
+
+.message-table .my-table-message {
+  padding: 10px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: column;
+          flex-flow: column;
+}
+/*# sourceMappingURL=table.css.map */
