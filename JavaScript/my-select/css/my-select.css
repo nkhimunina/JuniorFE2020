@@ -40,8 +40,13 @@
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  -webkit-box-align: end;
-      -ms-flex-align: end;
-          align-items: flex-end;
+}
+
+.my-select .my-select-option:hover {
+  background-color: cyan;
+}
+
+.my-select .my-select-option.selected {
+  background-color: crimson;
 }
 /*# sourceMappingURL=my-select.css.map */

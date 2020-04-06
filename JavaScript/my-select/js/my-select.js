@@ -43,14 +43,20 @@ const mySelectCaretUp = document.querySelector('.my-select-caret-up');
 const mySelectOptionsDiv = document.querySelector('.my-select-options');
 const mySelectInput = document.querySelector('.my-select-input');
 
+let selected = 0;
+
 let mySelectSelectedOption = document.querySelector('.my-select-selected');
 mySelectSelectedOption.innerHTML = '';
-mySelectSelectedOption.innerHTML += array[0];
+mySelectSelectedOption.innerHTML += array[selected];
 
 function displayArray(array) {
     for (let i = 0; i < array.length; i++) {
         mySelectOptionsDiv.innerHTML += `<span class="my-select-option">${array[i]}</span>`;
     }
+
+    let options = document.querySelectorAll('.my-select-options .my-select-option');
+    let selectedOption = options[selected];
+    selectedOption.classList.add('selected');
 }
 
 function onClickMySelectCaretDown(event) {
@@ -79,7 +85,7 @@ function onClickMySelectHead(event) {
 }
 
 function filterOptions(event) {
-    let filter = event.target.value.trim(); //TODO: пробелы все равно не удаляются + после перезагрузки страницы остается последнее введенное значение
+    let filter = event.target.value.trim();
     if (filter.length >= 2) {
         mySelectOptionsDiv.innerHTML = '';
         let filteredArr = array.filter(function (item) {
@@ -90,4 +96,18 @@ function filterOptions(event) {
     if (filter === '') {
         displayArray(array);
     }
+}
+
+function selectOption(event) {
+    let options = document.querySelectorAll('.my-select-options .my-select-option');
+    let selectedOption = options[selected];
+    selectedOption.classList.remove('selected');
+
+    let optionSpan = event.target;
+    selected = array.indexOf(event.target.innerHTML);
+    console.log(selected);
+    optionSpan.classList.add('selected');
+
+    mySelectSelectedOption.innerHTML = '';
+    mySelectSelectedOption.innerHTML += optionSpan.innerHTML;
 }

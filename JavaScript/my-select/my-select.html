@@ -11,11 +11,11 @@
     <div class="my-select">
         <div class="my-select-head" onclick="onClickMySelectHead(event)">
             <span class="my-select-selected">Кликни меня!</span>
-            <input class="my-select-input" type="text" onkeyup="filterOptions(event)">
+            <input class="my-select-input" type="text" autocomplete="off" onkeyup="filterOptions(event)">
             <button class="my-select-caret-down" onclick="onClickMySelectCaretDown(event)"><i class="fas fa-caret-down"></i></button>
             <button class="my-select-caret-up" onclick="onClickMySelectCaretUp(event)"><i class="fas fa-caret-up"></i></button>
         </div>
-        <div class="my-select-options"></div>
+        <div class="my-select-options" onclick="selectOption(event)"></div>
     </div>
     <script src="js/my-select.js"></script>
 </body>
