@@ -43,20 +43,24 @@ const mySelectCaretUp = document.querySelector('.my-select-caret-up');
 const mySelectOptionsDiv = document.querySelector('.my-select-options');
 const mySelectInput = document.querySelector('.my-select-input');
 
-let selected = 0;
+let selectedOption = array[0];
 
 let mySelectSelectedOption = document.querySelector('.my-select-selected');
 mySelectSelectedOption.innerHTML = '';
-mySelectSelectedOption.innerHTML += array[selected];
+mySelectSelectedOption.innerHTML += selectedOption;
 
 function displayArray(array) {
     for (let i = 0; i < array.length; i++) {
         mySelectOptionsDiv.innerHTML += `<span class="my-select-option">${array[i]}</span>`;
     }
+}
 
+function checkSelectedAtList() {
+    let currentList = getTextArray();
+    let selected = currentList.indexOf(selectedOption);
     let options = document.querySelectorAll('.my-select-options .my-select-option');
-    let selectedOption = options[selected];
-    selectedOption.classList.add('selected');
+    let selectedOptionElement = options[selected];
+    selectedOptionElement.classList.add('selected');
 }
 
 function onClickMySelectCaretDown(event) {
@@ -65,6 +69,7 @@ function onClickMySelectCaretDown(event) {
 
     mySelectOptionsDiv.innerHTML = '';
     displayArray(array);
+    checkSelectedAtList();
 }
 
 function onClickMySelectCaretUp(event) {
@@ -96,17 +101,31 @@ function filterOptions(event) {
     if (filter === '') {
         displayArray(array);
     }
+    checkSelectedAtList();
+}
+
+function getTextArray() {
+    let options = document.querySelectorAll('.my-select-options .my-select-option');
+    let newOptions = [];
+    for (let i = 0; i < options.length; i++) {
+        newOptions.push(options[i].innerHTML);
+    }
+
+    return newOptions;
 }
 
 function selectOption(event) {
+    let currentList = getTextArray();
+    let selected = currentList.indexOf(selectedOption);
     let options = document.querySelectorAll('.my-select-options .my-select-option');
-    let selectedOption = options[selected];
-    selectedOption.classList.remove('selected');
+    let selectedOptionElement = options[selected];
+    selectedOptionElement.classList.remove('selected');
 
     let optionSpan = event.target;
     selected = array.indexOf(event.target.innerHTML);
     console.log(selected);
     optionSpan.classList.add('selected');
+    selectedOption = event.target.innerHTML;
 
     mySelectSelectedOption.innerHTML = '';
     mySelectSelectedOption.innerHTML += optionSpan.innerHTML;
